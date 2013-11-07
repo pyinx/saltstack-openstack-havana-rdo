@@ -8,6 +8,7 @@ use saltstack to install openstack-havana all-in-one
 all-in-one,参考:http://www.chenshake.com/centos6-4-single-card-all-in-one-install-havana/
 
 **2.目录结构**
+```python
 saltstack-openstack-havana-rdo
 ├── README.md
 └── salt
@@ -21,6 +22,7 @@ saltstack-openstack-havana-rdo
     │       ├── epel-163.repo
     │       └── known_hosts
     └── top.sls
+```
 
 **3.依赖**
 1. RHEL/Centos 6.4
