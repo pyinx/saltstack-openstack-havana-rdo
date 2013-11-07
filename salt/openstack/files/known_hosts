@@ -1,0 +1,3 @@
+{% set key = salt['cmd.run']('cat /etc/ssh/ssh_host_rsa_key.pub') %}
+{% set ip = grains['ipv4'][0] %}
+{{ip}} {{key}}

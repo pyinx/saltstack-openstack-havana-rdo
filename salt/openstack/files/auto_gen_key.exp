@@ -1,0 +1,8 @@
+#!/usr/bin/expect -f
+spawn ssh-keygen -t rsa -f /root/.ssh/id_rsa
+expect {
+"y/n" { send "y\r";exp_continue }
+"passphrase" { send "\r";exp_continue }
+"passphrase again" { send "\r";exp_continue }
+"]# " { send "exit\r" }
+}
